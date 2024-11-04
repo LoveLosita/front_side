@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百度</title>
+    <style>
+        * {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .top {
+            width: 100%;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 24px;
+        }
+
+        .top span, .right span {
+            font-size: 14px;
+            margin: 0 12px;
+            cursor: pointer;
+        }
+
+        .top span:hover, .right span:hover {
+            color: #007bff;
+        }
+
+        .search {
+            width: 100%;
+            height: 270px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .search img {
+            width: 280px;
+            height: 140px;
+            cursor: pointer;
+        }
+
+        .search img:hover {
+            opacity: 0.8;
+        }
+
+        .input-box {
+            margin-top: 10px;
+        }
+
+        input, button {
+            height: 44px;
+            border: 2px solid #4e6ef2;
+            outline: none;
+        }
+
+        input {
+            width: 550px;
+            padding: 10px;
+            border-radius: 10px 0 0 10px;
+        }
+
+        .seek {
+            width: 108px;
+            height: 44px;
+            text-align: center;
+            line-height: 44px;
+            float: right;
+            background-color: #4e6ef2;
+            color: white;
+            border-radius: 0 10px 10px 0;
+            cursor: pointer;
+        }
+
+        .seek:hover {
+            background-color: #3959db;
+        }
+
+        button:hover {
+            background-color: #3959db;
+        }
+
+        .news-box {
+            width: 100%;
+            height: 350px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .news {
+            display: flex;
+            width: 1000px;
+            height: 350px;
+        }
+
+        .left-news {
+            display: flex;
+            flex-direction: column;
+            width: 560px;
+            height: 350px;
+        }
+
+        .top-text span {
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .top-text span:hover {
+            color: #007bff;
+        }
+
+        .text-one {
+            color: gray;
+        }
+
+        .news-item {
+            display: flex;
+            padding-top: 10px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .news-item:hover {
+            background-color: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        .news-item img {
+            width: 184px;
+            height: 122px;
+            border-radius: 10%;
+        }
+
+        .news-item .content {
+            display: flex;
+            flex-direction: column;
+            width: 360px;
+            margin-left: 15px;
+        }
+
+        .big, .big-two {
+            font-size: 20px;
+        }
+
+        .small {
+            font-size: 13px;
+            color: #626675;
+            margin-top: 80px;
+        }
+
+        .small-two {
+            font-size: 13px;
+            color: #626675;
+            margin-top: 25px;
+        }
+
+        .right-news {
+            display: flex;
+            flex-direction: column;
+            width: 320px;
+            height: 350px;
+            margin-left: 70px;
+        }
+
+        .top-menu {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .top-text-one {
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .top-text-one:hover {
+            color: #007bff;
+        }
+
+        .top-text-two {
+            font-size: 14px;
+            color: #626675;
+            cursor: pointer;
+        }
+
+        .top-text-two:hover {
+            color: #007bff;
+        }
+
+        .hot-one {
+            padding-top: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        .hot-one:hover {
+            background-color: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        .color-one {
+            color: #fe2d46;
+            font-size: 18px;
+        }
+
+        .color-text {
+            font-size: 16px;
+            margin-left: 5px;
+        }
+
+        .login {
+            width: 40px;
+            height: 25px;
+            background-color: #4e6ef2;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        .login:hover {
+            background-color: #3959db;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="top">
+            <div class="left">
+                <span>新闻</span>
+                <span>hao123</span>
+                <span>地图</span>
+                <span>贴吧</span>
+                <span>视频</span>
+                <span>图片</span>
+                <span>网盘</span>
+                <span>文库</span>
+                <span>更多</span>
+            </div>
+            <div class="right">
+                <span>位置</span>
+                <span>天气</span>
+                <span>设置</span>
+                <button class="login">登录</button>
+            </div>
+        </div>
+
+        <div class="search">
+            <img src="https://www.baidu.com/img/PCtm_d9c8750bed0b3c7d089fa7d55720d6cf.png" alt="百度">
+            <div class="input-box">
+                <input type="text" placeholder="请输入内容">
+                <div class="seek">百度一下</div>
+            </div>
+        </div>
+
+        <div class="news-box">
+            <div class="news">
+                <div class="left-news">
+                    <div class="top-text">
+                        <span class="text-one">我的关注</span>
+                        <span class="text-two">推荐</span>
+                    </div>
+                    <div class="news-item">
+                        <img src="https://gimg3.baidu.com/search/src=http%3A%2F%2Fpics0.baidu.com%2Ffeed%2F9922720e0cf3d7ca2c32e6fc4748f7076963a9de.jpeg%40f_auto%3Ftoken%3D1611b02c0c1ab453f63188d00c657b77&refer=http%3A%2F%2Fwww.baidu.com&app=2021&size=f360,240&n=0&g=0n&q=75&fmt=auto?sec=1720544400&t=c31df02a42493ca8a71624dffe094de1" alt="新闻图片">
+                        <div class="content">
+                            <span class="big">“韦神”捐款1600万抗洪？北大回应</span>
+                            <div class="small">
+                                <span>红星新闻</span>
+                                <span style="margin-left: 15px; color: black;">07-08 17:55</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="news-item">
+                        <img src="https://gimg3.baidu.com/search/src=http%3A%2F%2Fpics7.baidu.com%2Ffeed%2Fb2de9c82d158ccbfce65299c0c8df530b035411a.jpeg%40f_auto%3Ftoken%3D48692f4aa573915108b50a1d4bc6d94d&refer=http%3A%2F%2Fwww.baidu.com&app=2021&size=f360,240&n=0&g=0n&q=75&fmt=auto?sec=1720544400&t=585db0c6ce0b3f88060cd23b7b99df62" alt="新闻图片">
+                        <div class="content">
+                            <span class="big-two">74岁个体户销售一瓶78元过期葡萄酒，被罚5万元，最高检：“小过重罚”不符合法律精神</span>
+                            <div class="small-two">
+                                <span>鲁中日报</span>
+                                <span style="margin-left: 15px; color: black;">07-08 7:31</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-news">
+                    <div class="top-menu">
+                        <span class="top-text-one">百度热搜></span>
+                        <span class="top-text-two">换一换</span>
+                    </div>
+
+                    <div class="hot-one">
+                        <span class="color-one">1</span>
+                        <span class="color-text">这组数据见证生态发展奇迹🔝</span>
+                    </div>
+                    <div class="hot-one">
+                        <span class="color-one">2</span>
+                        <span class="color-text">这组数据见证生态发展奇迹🔝</span>
+                    </div>
+                    <div class="hot-one">
+                        <span class="color-one">3</span>
+                        <span class="color-text">这组数据见证生态发展奇迹🔝</span>
+                    </div>
+                    <div class="hot-one">
+                        <span class="color-one">4</span>
+                        <span class="color-text">这组数据见证生态发展奇迹🔝</span>
+                    </div>
+                    <div class="hot-one">
+                        <span class="color-one">5</span>
+                        <span class="color-text">这组数据见证生态发展奇迹🔝</span>
+                    </div>
+                    <div class="hot-one">
+                        <span class="color-one">6</span>
+                        <span class="color-text">这组数据见证生态发展奇迹🔝</span>
+                    </div>
+                    <div class="hot-one">
+                        <span class="color-one">7</span>
+                        <span class="color-text">这组数据见证生态发展奇迹🔝</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

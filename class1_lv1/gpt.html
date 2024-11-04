@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百度一下，你就知道</title>
+    <style type="text/css">
+        .bluebox {
+            background-color: #3A88FC;
+            color: white;
+            text-align: center;
+            margin-left: -1px; /* 使盒子与输入框贴在一起 */
+        }
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            float: right;
+        }
+        .header div {
+            clear: both;
+        }
+        .header strong {
+            margin: 20px 20px;
+        }
+        .header span {
+            margin-right: 20px;
+            text-decoration: underline;
+        }
+        .search-container {
+            display: flex;
+            justify-content: center; /* 水平居中 */
+            align-items: center; /* 垂直居中 */
+            height: 100px; /* 根据需要调整高度 */
+        }
+        .search-input {
+            height: 40px;
+            width: 320px;
+        }
+        .search-button {
+            width: 80px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <style type="text/css">
+            span {
+                text-decoration: underline;
+            }
+        </style>
+        <div>
+            <strong><span>新闻</span><span>hao123</span><span>地图</span><span>视频</span>
+            <span>贴吧</span><span>学术</span><span>登录</span><span>设置</span><span class="bluebox" style="text-decoration: none;">更多产品</span></strong>
+        </div>
+    </div><br>
+
+    <div class="search-container">
+        <img src="assets/baidu_logo.png" alt="百度一下，你就知道" title="百度一下，你就知道" style="width: 25%;height: auto;">
+        <div style="text-align: center;">
+            <input type="text" class="search-input">
+            <span class="bluebox search-button">百度一下</span>
+        </div>
+    </div>
+</body>
+</html>

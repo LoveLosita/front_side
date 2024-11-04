@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百度一下，你就知道</title>
+    <style type="text/css">
+        .bluebox {
+            background-color: #3A88FC;
+            color: white;
+            text-align: center;
+            margin-left: -1px; /* 使盒子与输入框贴在一起 */
+        }
+        .search {
+            width: 100%;
+            height: 270px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        * {
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .search img {
+            width: 280px; /* 确保这一行与第一段一致 */
+            height: 140px; /* 确保这一行与第一段一致 */
+            cursor: pointer;
+        }
+        .search img:hover {
+            opacity: 0.8; /* 确保这一行与第一段一致 */
+        }
+        .input-box {
+            margin-top: 10px; /* 确保这一行与第一段一致 */
+            display: flex; 
+        }
+        input, button {
+            height: 44px;
+            border: 2px solid #4e6ef2;
+            outline: none;
+        }
+        input {
+            width: 550px;
+            padding: 10px;
+            border-radius: 10px 0 0 10px;
+        }
+        .seek {
+            width: 108px;
+            height: 44px;
+            text-align: center;
+            line-height: 44px;
+            background-color: #4e6ef2;
+            color: white;
+            border-radius: 0 10px 10px 0;
+            cursor: pointer;
+        }
+        .seek:hover {
+            background-color: #3959db;
+        }
+    </style>
+</head>
+<body>
+    <div style="float: right;">
+        <style type="text/css">
+            .span1 {
+                margin-right: 20px;
+                text-decoration: underline;
+            }
+        </style>
+        <div style="clear: both;">
+            <strong style="margin: 20px 20px;"><span class="span1">新闻</span><span class="span1">hao123</span>
+                <span class="span1">地图</span><span class="span1">视频</span>
+        <span class="span1">贴吧</span><span class="span1">学术</span><span class="span1">登录</span><span class="span1">设置</span>
+        <span class="bluebox" style="text-decoration: none;">更多产品</span></strong>
+        </div>
+    </div>
+    <div class="search">
+        <img src="assets/baidu_logo.png" alt="百度一下，你就知道" title="百度一下，你就知道">
+        <div class="input-box">
+            <input type="text" style="text-align: left;">
+            <div class="seek">百度一下</div>
+        </div>
+    </div>
+    <div style="margin-top: 200px;">
+        <style>
+            *{
+            margin: auto;
+            text-align: center;
+        }
+        </style>
+        <img style="width: 7%;" src="assets/baiduapp.png" alt="下载百度app" title="百度app">
+        <strong><div>下载百度app</div></strong>
+        <div style="color: gray;">有事搜一搜，没事看一看</div>
+    </div>
+    <div style="margin-top: 50px;">
+        <style>
+            .span2 {
+                margin-right: 30px;
+                text-decoration: underline;
+            }
+        </style>
+        <span class="span2" style="color: gray;">把百度作为首页</span>
+        <span class="span2" style="color: gray;">关于百度</span>
+        <span class="span2" style="color: gray;">About Baidu</span>
+        <span class="span2" style="color: gray;">百度推广</span>
+    </div>
+    <div style="color: gray;margin-top: 20px;">
+        <span>©2024_Baidu</span>
+        <span style="text-decoration: underline;">使用百度前必读</span>
+        <span style="text-decoration: underline;">意见反馈</span>
+        <span style="text-decoration: underline;">浙ICP备114514号</span>
+    </div>
+</body>
+</html>
